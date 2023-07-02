@@ -12,6 +12,26 @@ let mouse = {
     radius: (canvas.height/100) * (canvas.width/100)
 }
 
+function adjustCanvasSize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+function adjustParticlePositions() {
+    particlesArray.forEach(particle => {
+        particle.x = (particle.x / canvas.width) * window.innerWidth;
+        particle.y = (particle.y / canvas.height) * window.innerHeight;
+    });
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(func, wait);
+    };
+}
+
 window.addEventListener('mousemove',
     function(event) {
         mouse.x = event.x;
