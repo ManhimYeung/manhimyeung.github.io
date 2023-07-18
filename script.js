@@ -8,12 +8,3 @@ function loadHTML(url, element) {
         element.innerHTML = data;
     });
 }
-
-function toggleCanvas() {
-    let canvas = document.querySelector('#canvas');
-    if (window.getComputedStyle(canvas).display === 'none') {
-        canvas.style.display = 'block';
-    } else {
-        canvas.style.display = 'none';
-    }
-}
