@@ -14,13 +14,6 @@
 
 .code {
     background-image: url('../misc/blurred.jpg');
-    background-size: 100%;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
 }
 
 .panel {
@@ -38,8 +31,28 @@
     text-align: center;
 }
 
-.links img {
-    margin-left: 16px;
+.links {
+    margin-left: -16px;
+}
+
+.panel * {
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+}
+
+.selfie img
+{
+    margin-bottom: 32px;
+
+    border: 4px solid #FFF;
+    border-radius: 100%;
+
+    width: 224px;
+    height: 224px;
+}
+
+.links img
+{
+    margin-left: 16px; 
     width: 48px;
     height: 48px;
 }
