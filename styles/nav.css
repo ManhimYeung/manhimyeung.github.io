@@ -1,4 +1,7 @@
 /* nav bar*/
+.main {
+    padding-top: 56px;
+}
 
 nav {
     z-index: 10000;

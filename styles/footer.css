@@ -1,0 +1,94 @@
+footer {
+    background-color: #333;
+
+    margin-top: 32px;
+
+    width: 100%;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+.footer-table {
+	display: block;
+
+    margin: 0 auto;
+    padding: 96px 0px 96px 0px;
+
+    width: 75vw;
+}
+
+.footer-table-row {
+    display: block;
+    overflow: hidden;
+
+    margin-bottom: 16px;
+}
+
+.footer-table-cell {
+    float: left;
+
+    width: 50%;
+
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.footer-table-header {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+footer .social-link {
+    margin: 0px;
+    padding: 7px;
+
+    width: 32px;
+    height: 32px;
+
+    -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+}
+
+footer .social-link:hover {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(85, 119, 153, 0.6));
+    filter: drop-shadow(0px 0px 4px rgba(85, 119, 153, 0.6));
+}
+
+footer .social-link:active {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(51, 153, 255, 0.6));
+    filter: drop-shadow(0px 0px 4px rgba(51, 153, 255, 0.6));
+}
+
+/* Media query to override styling on screens smaller than 980px */
+@media only screen and (max-width: 979px) {
+
+    .footer-table {
+        width: 75vw;
+    }
+
+    .footer-table-cell {
+        width: 100%;
+
+		font-size: 1.5em;
+    }
+
+    .footer-table-header {
+        font-size: 1.75em;
+    }
+
+    #links-header {
+        display: none;
+    }
+
+    #links-icons {
+        margin-top: 16px;
+    }
+
+    #links-icons .social-link {
+        width: 48px;
+        height: 48px;
+    }
+
+}

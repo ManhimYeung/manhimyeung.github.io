@@ -1,0 +1,108 @@
+.tile-panel {
+    display: block;
+    overflow: hidden;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+
+    width: calc(100% - 64px);
+}
+
+.tile-base {
+    display: block;
+    float: left;
+
+    margin-bottom: 8px;
+
+    text-decoration: none;
+
+    background: #000;
+}
+
+.portfolio-tile {
+    border: 1px solid #FFF;
+
+    width: calc(100% - 2px);
+    height: 200px;
+}
+
+.inline-link-tile {
+    float: left;
+
+    margin-right: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    height: 24px;
+    line-height: 24px;
+
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.inline-tile {
+    float: left;
+
+    margin-right: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    height: 24px;
+    line-height: 24px;
+
+    font-size: 1em;
+}
+
+.screenshot-tile {
+    width: 100%;
+}
+
+.tile-base .tile-title, .tile-text {
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+}
+
+.tile-base .tile-cover {
+    width: 100%;
+    height: 100%;
+}
+
+.tile-base .tile-cover img {
+    object-fit: cover;
+
+    min-width: 100%;
+    max-width: 100%;
+    height: 200px;
+}
+
+.tile-base .tile-cover .tile-title {
+    position: relative;
+
+    left: 8px;
+    bottom: 35px;
+
+    width: 100%;
+
+    font-size: 1.25em;
+}
+
+/* Media query to override styling on screens larger than 1024px */
+@media only screen and (min-width: 1000px) {
+    .tile-panel {
+        margin-right: 0px;
+        width: calc(100% + 21px);
+    }
+
+    .tile-base {
+        margin-right: 8px;
+    }
+
+    .portfolio-tile {
+        width: calc(50% - 16px - 32px);
+        height: 300px;
+    }
+
+    .tile-base .tile-cover img {
+        height: 300px;
+    }
+}
