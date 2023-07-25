@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>About Me</title>
+        <title>About</title>
         <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/codeBGP.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        
+    
+        <script src="scripts/nav.js"></script>
     </head>
-<body>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>My name is Man Him Yeung, and my parents definitely did not give me this name based on my gender! 
-                I am a passionate software developer with a love for coding and problem-solving. 
-                With experience in automated testing and game development, I enjoy diving into challenging projects that push the boundaries of technology. 
-                I thrive in dynamic environments where I can continuously learn and grow. 
-                As a curious learner, I am always eager to explore new technologies and apply them to create innovative solutions. I am dedicated, driven, 
-                and committed to delivering high-quality results.</p>
+    <body>
+        <div class="side-menu" id="sideNav">
+            <a onclick="closeNav()" class="close-button" href="javascript:void(0)">&times;</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="about.html">About</a>
         </div>
     
-        <div id="hobbies">
-            <h3>Hobbies</h3>
-            <ul>
-                <li>Playing computer games! (Mostly Teamfight Tactics)</li>
-                <li>Travelling to Japan for fooooood</li>
-                <li>Watching programming videos on YouTube</li>
-            </ul>
+        <nav>
+            <a onclick="openNav()" class="nav-btn menu-btn no-select">
+                <img src="misc/hamburger.png" alt="Menu" />
+            </a>
+            <a class="nav-btn title-btn no-select" href="index.html"> 
+                Man Him Yeung
+            </a>
+        </nav>
+
+        <div class="main" id="main">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My name is Man Him Yeung, and my parents definitely did not give me this name based on my gender! 
+                    I am a passionate software developer with a love for coding and problem-solving. 
+                    With experience in automated testing and game development, I enjoy diving into challenging projects that push the boundaries of technology. 
+                    I thrive in dynamic environments where I can continuously learn and grow. 
+                    As a curious learner, I am always eager to explore new technologies and apply them to create innovative solutions. I am dedicated, driven, 
+                    and committed to delivering high-quality results.</p>
+            </div>
+    
+            <div id="goals">
+                <h3>Goal</h3>
+                <p>My passion and desire lie in becoming a test automation engineer. 
+                    With unwavering determination, I am dedicated to mastering the art of automating tests, combining my love for technology and my commitment to ensuring software quality. 
+                    Embracing the challenges that come with this role, I am eager to continuously learn and grow, staying at the forefront of cutting-edge automation techniques. 
+                    My ultimate goal is to make a significant impact in the field of software testing, driving efficiency and reliability in software development processes.</p>
+            </div>
         </div>
 
-        <div id="goals">
-            <h3>Goal</h3>
-            <p>My passion and desire lie in becoming a test automation engineer. 
-                With unwavering determination, I am dedicated to mastering the art of automating tests, combining my love for technology and my commitment to ensuring software quality. 
-                Embracing the challenges that come with this role, I am eager to continuously learn and grow, staying at the forefront of cutting-edge automation techniques. 
-                My ultimate goal is to make a significant impact in the field of software testing, driving efficiency and reliability in software development processes.</p>
-        </div>
-    </section>
+        <footer>
+            <div class="footer-table">
+                <div class="footer-table-row">
+                    <div class="footer-table-cell footer-table-header">
+                        Man Him Yeung
+                    </div>
+                    <div id="links-header" class="footer-table-cell footer-table-header">
+                        Links
+                    </div>
+                </div>
+                <div class="footer-table-row">
+                    <div class="footer-table-cell">
+                        Software Developer & Tester
+                    </div>
+                    <div id="links-icons" class="footer-table-cell">
 
-</body>
+                        <a href="https://www.linkedin.com/in/manhim-yeung-3b4691167/" target="_blank">
+                            <img class="social-link" src="misc/linkedin.png" alt="Link to my LinkedIn profile" />
+                        </a>
+
+                        <a href="https://github.com/ManhimYeung" target="_blank">
+                            <img class="social-link" src="misc/github.png" alt="Link to my GitHub" />
+                        </a>
+
+                        <a href="mailto:manhim.yeung@gmail.com" target="_blank">
+                            <img class="social-link" src="misc/gmail.png" alt="Email me" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
